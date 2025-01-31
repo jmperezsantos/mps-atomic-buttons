@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SUIDangerButton: View {
+public struct SUIDangerButton: View {
     
     var title:String
     var backgroundColor:Color = Color(red: 222/255.0,
@@ -15,7 +15,7 @@ struct SUIDangerButton: View {
                                       blue: 63/255.0)
     var action:()->Void
     
-    var body: some View {
+    public var body: some View {
         Button(action: action) {
             Text(title)
                 .padding()
