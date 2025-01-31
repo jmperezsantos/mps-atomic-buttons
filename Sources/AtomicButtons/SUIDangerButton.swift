@@ -15,6 +15,11 @@ public struct SUIDangerButton: View {
                                       blue: 63/255.0)
     var action:()->Void
     
+    public init(title: String, action: @escaping () -> Void) {
+        self.title = title
+        self.action = action
+    }
+    
     public var body: some View {
         Button(action: action) {
             Text(title)
